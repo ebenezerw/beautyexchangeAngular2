@@ -1,0 +1,23 @@
+[
+  {
+    "productName": "Gel Pomade",
+    "productImage": "gelpomade.jpg",
+    "path": "/images/gelpomade.jpg",
+    "productDescription": "water-based, hydrating vitamin B5 infused GEL POMADE combines the best properties of gels and pomades to create a new hybrid styling medium.",
+    "zipcode": "20910"
+},
+{
+  "productName": "Neutrogena Men Shaving Cream",
+  "productImage": "shavingcream.jpg",
+  "path": "/images/shavingcream.jpg",
+  "productDescription": "Neutrogena Men. Shave your way to clear skin.Low Foam Formula. Oil free. Won't clog pores. Clean rinsing.",
+  "zipcode": "20001"
+},
+{
+  "productName": "Natural Wax",
+  "productImage": "naturalwax",
+  "path": "/images/naturalwax.jpg",
+  "productDescription": "",
+  "zipcode": "20866"
+}
+  ]

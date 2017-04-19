@@ -1,0 +1,12 @@
+<div class="row">
+            <div class="col-sm-6 col-md-4 product"  *ngFor="let product of products">
+                <div class="thumbnail">
+                    <!-- <img src="{{imageUrl}}" alt="..."> -->
+                    <div class="caption">
+                        <h3><a [routerLink]="['/product/'+product.$key]">{{product.productName}}</a></h3>
+                        <p>{{product.productDescription}}</p>
+                        <p><strong>Located At: </strong>{{product.zipcode}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>

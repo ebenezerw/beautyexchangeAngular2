@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Mr+Bedfort|Pacifico|Quicksand');
+
+.jumbotron{
+    margin-top: 25px;
+}
+.exchange{
+    color: #fb4b46;
+    font-weight: 700;
+    font-family: 'Mr Bedfort', cursive;
+    font-size: 65px;
+}
+
+.beauty{
+    color: black;
+    font-family: "Quicksand"
+}
+
+.subHeading{
+    font-family: "Quicksand";
+    font-size: 16px;
+}
+
+p{
+    font-family: "Quicksand";
+    font-size: 14px;
+}

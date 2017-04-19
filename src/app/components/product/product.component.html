@@ -1,0 +1,19 @@
+<div *ngIf="product">
+    <div class="page-header">
+            <h3>{{product.productName}}</h3>
+            <a class="btn btn-warning" [routerLink]="['/edit-product/'+product.$key]">Edit</a>
+    </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{imageUrl}}" alt="product image">
+                    </div>
+                    </div>
+                <div class="col-md-8">
+                    <h5>Description</h5>
+                    <p>{{product.productDescription}}</p>
+                    <h5>Location</h5>
+                    <p>{{product.zipcode}}</p>
+                </div>
+            </div>
+    </div>

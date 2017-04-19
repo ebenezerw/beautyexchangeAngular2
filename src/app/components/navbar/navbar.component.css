@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Mr+Bedfort|Pacifico|Quicksand');
+
+.exchange{
+    color: #fb4b46;
+    font-weight: 700;
+    font-family: 'Mr Bedfort', cursive;
+    font-size: 20px;
+}
+.beauty{
+    color: white;
+    font-family: "Quicksand"
+}
+
+li{
+    font-family: "Quicksand"
+}
+
+input{
+    font-family: "Quicksand"
+}

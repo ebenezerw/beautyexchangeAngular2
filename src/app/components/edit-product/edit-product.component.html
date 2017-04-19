@@ -1,0 +1,21 @@
+<div class="container-fluid">
+        <form (submit)="onEditSubmit()" style="margin-top:30px;">
+            <h3 class="page-header">Edit {{productName}}</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Product Name" [(ngModel)]="productName" name="productName" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Product Description" [(ngModel)]="productDescription" name="productDescription" required>
+                </div>
+                <!-- <div class="form-group">
+                    <input id="productImage" type="file" class="form-control" placeholder="Product Image" [(ngModel)]="productImage" name="productImage">
+                </div> -->
+                <div class="form-group">
+                    <input type="text" class="form-control zipcode" placeholder="Your Zipcode" pattern="\d{5}-?(\d{4})?" [(ngModel)]="zipcode" name="zipcode" required>
+                </div>
+                <button type="submit" class="btn btn-warning">Update Product</button>
+                <a (click)="onDeleteClick()" class="btn btn-danger">Delete</a>
+        </form>
+
+
+</div>
