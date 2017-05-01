@@ -8,6 +8,7 @@ import {FirebaseService} from "../../services/firebase.service"
 })
 export class ProductsComponent implements OnInit {
     products: any;
+    search: any;
 
     constructor(private firebaseService: FirebaseService) { }
 
@@ -16,5 +17,12 @@ export class ProductsComponent implements OnInit {
           this.products = products
       })
   }
+
+
+    searchProds(){
+      this.firebaseService.getProductsByName(this.search.toLowerCase()).subscribe(products => {
+        this.products = products;
+      });
+    }
 
 }

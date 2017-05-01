@@ -1,3 +1,13 @@
+<div class="container">
+    <form class="navbar-form">
+        <div class="input-group col-xs-8">
+            <!-- <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span> -->
+            <input type="text" class="form-control" placeholder="Search products..." [(ngModel)]="search" name="search" (keyup)="searchProds()" aria-describedby="basic-addon1">
+        </div>
+    </form>
+</div>
+
+
 <div class="row">
             <div class="col-sm-6 col-md-4 product"  *ngFor="let product of products">
                 <div class="thumbnail">

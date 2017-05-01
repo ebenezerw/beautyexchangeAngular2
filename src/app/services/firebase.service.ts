@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFire, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2';
 import * as firebase from "firebase"
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/operator/map'
 
 @Injectable()
 export class FirebaseService {
@@ -42,6 +44,12 @@ export class FirebaseService {
 
   deleteProduct(id){
       return this.products.remove(id)
+  }
+
+  getProductsByName(productName: any): Observable<Product[]> {
+    return this.af.database.list('products')
+    .map(_products => _products.filter(product => product.productName.toLowerCase().indexOf(productName) !== -1));
+
   }
 
 }

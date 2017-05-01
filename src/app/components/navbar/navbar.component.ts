@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AngularFire} from "angularfire2"
 import {FlashMessagesService} from "angular2-flash-messages"
 import {Router} from "@angular/router"
+import {FirebaseService} from "../../services/firebase.service"
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +10,10 @@ import {Router} from "@angular/router"
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+    products:any;
 
   constructor(
+      private firebaseService: FirebaseService,
       public af:AngularFire,
       public flashMessage: FlashMessagesService,
       private router: Router
@@ -30,5 +33,6 @@ export class NavbarComponent implements OnInit {
 
        this.router.navigate(["/"])
   }
+
 
 }
